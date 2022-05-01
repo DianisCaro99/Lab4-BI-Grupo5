@@ -1,8 +1,8 @@
 # Lab4-BI-Grupo5
 ## API URL
 Base URL: http://3.123.184.21/api
-  - Predictores X de un registro: http://3.123.184.21/api/prediction-register
-  - Conjunto de registros: http://3.123.184.21/api/prediction-set
+  - Predictores X de un registro (Recibe en el body in JSON): http://3.123.184.21/api/prediction-register 
+  - Conjunto de registros (Recibe en el body in JSON): http://3.123.184.21/api/prediction-set
 
 ## Instalación
   Instalación de modulos adicionales:
