@@ -62,4 +62,5 @@ def make_predictions_s():
         return "Ocurrió un error evaluando los datos en el modelo"
     return round(PredictionModel.score(X_,y),3)
 
-app.run(host="0.0.0.0", port=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
