@@ -20,9 +20,9 @@ flask run
 ```
 ## Despliegue
 1. Crear una máquina EC2 en AWS  con los siguientes requerimientos
-  **Instance type:** t2.medium - Ubuntu Server 18.04 LTS (HVM)
-  **Key pair:** ov42-europe
-  **Network settings:** Default - Allow SSH traffic from *Anywhere*
+  - **Instance type:** t2.medium - Ubuntu Server 18.04 LTS (HVM)
+  - **Key pair:** ov42-europe
+  - **Network settings:** Default - Allow SSH traffic from *Anywhere*
 2. Habilitar el puerto 80 para comunicación HTTP
 3. Correr los siguientes comandos 
 ```bash
@@ -81,7 +81,7 @@ sudo systemctl enable bi.service
 sudo service nginx restart
 sudo service bi restart
 ```
-11. Entrar a la congifuración del Nginx
+11. Entrar a la configuracion del Nginx
 ```bash
 cd /etc/nginx/sites-enabled/
 ```
