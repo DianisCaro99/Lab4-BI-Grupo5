@@ -25,5 +25,5 @@ class DataModel(BaseModel):
 #Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
     def columns(self):
         return ["Adult Mortality", "infant deaths", "Alcohol","percentage expenditure","Hepatitis B", "Measles", "BMI",
-                "under-five deaths", "Polio", "Total expenditure", "Diphtheria", "HIV/AIDS", "DGP", "Population",
-                "thinness 10-19 years", "thinness 5-9 years", "Income composition of resources", "Schooling"]
+                "under-five deaths", "Polio", "Total expenditure", "Diphtheria", "HIV/AIDS", "GDP", "Population",
+                "thinness  10-19 years", "thinness 5-9 years", "Income composition of resources", "Schooling"]
