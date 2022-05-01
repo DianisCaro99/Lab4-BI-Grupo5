@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from joblib import load
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -8,6 +9,7 @@ import models.PredictionModel as PredictionModel
 import models.PreparacionTransformer as PreparacionTransformer
 
 app = Flask(__name__)
+cors = CORS(app)
 
 class PreparacionTransformer(BaseEstimator,TransformerMixin):
     def __init__(self):
