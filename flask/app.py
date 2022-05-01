@@ -25,7 +25,7 @@ class PreparacionTransformer(BaseEstimator,TransformerMixin):
 
 pipe2 = load('assets/prediccion.joblib')
 
-@app.get("/")
+@app.get("/api")
 def read_root():
    return "Lab 4 - Grupo 5: Despliegue de modelos de ML mediate uso de API's"
 
