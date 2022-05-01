@@ -31,7 +31,7 @@ pipe2 = load('assets/prediccion.joblib')
 def read_root():
    return "Lab 4 - Grupo 5: Despliegue de modelos de ML mediate uso de API's"
 
-@app.route("/prediction-register", methods=["GET"])
+@app.route("/api/prediction-register", methods=["GET"])
 def make_predictions_r():
     data = request.get_json()
     dataModel = DataModel.DataModel(**data)
@@ -46,7 +46,7 @@ def make_predictions_r():
         return "Ocurrió un error en la predicción"
     return jsonify(prediction)
 
-@app.route("/prediction-set", methods=["GET"])
+@app.route("/api/prediction-set", methods=["GET"])
 def make_predictions_s():
     data = request.get_json()
     dataModel = DataModel.DataModel(**data)
